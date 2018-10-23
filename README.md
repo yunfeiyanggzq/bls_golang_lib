@@ -1,7 +1,7 @@
-# discription
+# Discription
 it  is  a  BLS  signature  lib for  golang 
-# how  to  install  the  lib
-## first :install  the  GMP
+# How  to  install  the  lib
+## First :install  the  GMP
 This package must be compiled using cgo. It also requires the installation of GMP and PBC. During the build process, this package will attempt to include <gmp.h> and <pbc/pbc.h>, and then dynamically link to GMP and PBC.
 
 Most systems include a package for GMP. To install GMP in Debian / Ubuntu:
@@ -18,7 +18,7 @@ For installation with Fink (http://www.finkproject.org/) on Mac OS X:
 
 For more information or to compile from source, visit https://gmplib.org/
 
-## second:install the PBC 
+## Second:install the PBC 
 To install the PBC library, download the appropriate files for your system from https://crypto.stanford.edu/pbc/download.html. PBC has three dependencies: the gcc compiler, flex (http://flex.sourceforge.net/), and bison (https://www.gnu.org/software/bison/). See the respective sites for installation instructions. Most distributions include packages for these libraries. For example, in Debian / Ubuntu:
 
 `sudo apt-get install build-essential flex bison`
@@ -35,7 +35,7 @@ After installing, you may need to rebuild the search path for libraries:
 `sudo ldconfig`
 
 It is possible to install the package on Windows through the use of MinGW and MSYS. MSYS is required for installing PBC, while GMP can be installed through a package. Based on your MinGW installation, you may need to add` "-I/usr/local/include"` to CPPFLAGS and `"-L/usr/local/lib" `to LDFLAGS when building PBC. Likewise, you may need to add these options to` CGO_CPPFLAGS `and` CGO_LDFLAGS` when installing this package. 
-## third   install  the BLS signature  golang  lib
+## Third: install  the BLS signature  golang  lib
 download the bls  signature  lib  
 
 ` go  get  go  get  github.com/yunfeiyangbuaa/bls_golang_lib/BLS`
@@ -43,8 +43,8 @@ download the bls  signature  lib
 and  imprt in your code 
 
 `import " github.com/yunfeiyangbuaa/bls_golang_lib/BLS"`
-#  how to use
-##   exmple
+#  How to use
+##   Exmple
  ```
  func main() {
     	BLS.BLS_start() 
@@ -55,7 +55,7 @@ and  imprt in your code
     	BLS.Bls_verify([]byte("hello") ,pubKey,sign)      
     }
  ```
-## function 
+## Function 
 ```
   func BLS_start()                 
     Generate_bls_keypair()(*pbc.Element,*pbc.Element)　　　　
