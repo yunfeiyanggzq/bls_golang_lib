@@ -1,4 +1,4 @@
-# discribtion
+# discription
 it  is  a  BLS  signature  lib for  golang 
 # how  to  install  the  lib
 ## first :install  the  GMP
@@ -37,8 +37,11 @@ After installing, you may need to rebuild the search path for libraries:
 It is possible to install the package on Windows through the use of MinGW and MSYS. MSYS is required for installing PBC, while GMP can be installed through a package. Based on your MinGW installation, you may need to add` "-I/usr/local/include"` to CPPFLAGS and `"-L/usr/local/lib" `to LDFLAGS when building PBC. Likewise, you may need to add these options to` CGO_CPPFLAGS `and` CGO_LDFLAGS` when installing this package. 
 ## third   install  the  bls signature  golang  lib
 download the bls  signature  lib  
-` go  get  go  get  github.com/yunfeiyangbuaa/bls_golang_lib/BLS `
+
+` go  get  go  get  github.com/yunfeiyangbuaa/bls_golang_lib/BLS`
+
 and  imprt in your code 
+
 `import " github.com/yunfeiyangbuaa/bls_golang_lib/BLS"`
 #  how to use
 ##   exmple
