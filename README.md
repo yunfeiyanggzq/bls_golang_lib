@@ -35,7 +35,7 @@ After installing, you may need to rebuild the search path for libraries:
 `sudo ldconfig`
 
 It is possible to install the package on Windows through the use of MinGW and MSYS. MSYS is required for installing PBC, while GMP can be installed through a package. Based on your MinGW installation, you may need to add` "-I/usr/local/include"` to CPPFLAGS and `"-L/usr/local/lib" `to LDFLAGS when building PBC. Likewise, you may need to add these options to` CGO_CPPFLAGS `and` CGO_LDFLAGS` when installing this package. 
-## third   install  the  bls signature  golang  lib
+## third   install  the BLS signature  golang  lib
 download the bls  signature  lib  
 
 ` go  get  go  get  github.com/yunfeiyangbuaa/bls_golang_lib/BLS`
