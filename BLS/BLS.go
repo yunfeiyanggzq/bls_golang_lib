@@ -27,7 +27,6 @@ func main(){
 	Bls_verify([]byte("guzhiqiang") ,pubKey,sign)
 }
 
-
 func SetPriKeyIntoByte(privkey  *pbc.Element)[]byte{
 	return privkey.Bytes()
 }
